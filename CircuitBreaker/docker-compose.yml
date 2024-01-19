@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  circuitbreaker.client:
+    image: ${DOCKER_REGISTRY-}circuitbreakerclient
+    build:
+      context: .
+      dockerfile: CircuitBreaker.Client/Dockerfile
+
+  circuitbreaker.server:
+    image: ${DOCKER_REGISTRY-}circuitbreakerserver
+    build:
+      context: .
+      dockerfile: CircuitBreaker.Server/Dockerfile
+

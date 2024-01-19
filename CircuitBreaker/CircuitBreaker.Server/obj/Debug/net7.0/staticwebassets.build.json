@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pYPejhPJf6wUcrq0GxUrE3/yPOyDiJ+EnZBBz74hLvs=",
+  "Source": "CircuitBreaker.Server",
+  "BasePath": "_content/CircuitBreaker.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

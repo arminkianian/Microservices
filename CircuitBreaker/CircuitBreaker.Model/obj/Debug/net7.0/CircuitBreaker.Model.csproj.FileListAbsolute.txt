@@ -1,0 +1,12 @@
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\bin\Debug\net7.0\CircuitBreaker.Model.deps.json
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\bin\Debug\net7.0\CircuitBreaker.Model.dll
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\bin\Debug\net7.0\CircuitBreaker.Model.pdb
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\CircuitBreaker.Model.csproj.AssemblyReference.cache
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\CircuitBreaker.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\CircuitBreaker.Model.AssemblyInfoInputs.cache
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\CircuitBreaker.Model.AssemblyInfo.cs
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\CircuitBreaker.Model.csproj.CoreCompileInputs.cache
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\CircuitBreaker.Model.dll
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\refint\CircuitBreaker.Model.dll
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\CircuitBreaker.Model.pdb
+D:\My Repositories\Microservices\CircuitBreaker\CircuitBreaker.Model\obj\Debug\net7.0\ref\CircuitBreaker.Model.dll

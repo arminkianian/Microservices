@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Client\\CircuitBreaker.Client.csproj": {}
+  },
+  "projects": {
+    "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Client\\CircuitBreaker.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Client\\CircuitBreaker.Client.csproj",
+        "projectName": "CircuitBreaker.Client",
+        "projectPath": "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Client\\CircuitBreaker.Client.csproj",
+        "packagesPath": "C:\\Users\\Armin\\.nuget\\packages\\",
+        "outputPath": "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Armin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/arminkia/DemoProject/_packaging/DemoFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Model\\CircuitBreaker.Model.csproj": {
+                "projectPath": "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Model\\CircuitBreaker.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.18.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Model\\CircuitBreaker.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Model\\CircuitBreaker.Model.csproj",
+        "projectName": "CircuitBreaker.Model",
+        "projectPath": "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Model\\CircuitBreaker.Model.csproj",
+        "packagesPath": "C:\\Users\\Armin\\.nuget\\packages\\",
+        "outputPath": "D:\\My Repositories\\Microservices\\CircuitBreaker\\CircuitBreaker.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Armin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/arminkia/DemoProject/_packaging/DemoFeed/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
