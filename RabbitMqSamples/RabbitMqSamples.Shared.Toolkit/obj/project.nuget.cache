@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xiei4t4vEplCjnHpKpKQHfoOYkYOidOEc190xnP3BHHv7sogURFaQOVXP8WZm/Ng+72cETulmHY69Uu7a/gQoQ==",
+  "success": true,
+  "projectFilePath": "D:\\MyRepositories\\Microservices\\RabbitMqSamples\\RabbitMqSamples.Shared.Toolkit\\RabbitMqSamples.Shared.Toolkit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Armin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
