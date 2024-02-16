@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\Framework.EventStore.SqlServer\Framework.EventStore.SqlServer.csproj" />
     <ProjectReference Include="..\CustomerManagement.ApplicationService\CustomerManagement.ApplicationService.csproj" />
+    <ProjectReference Include="..\CustomerManagement.Infrastructure.Persistence\CustomerManagement.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

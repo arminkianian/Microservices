@@ -1,4 +1,9 @@
 using CustomerManagement.ApplicationService.Customers;
+using CustomerManagement.Domain.Customers.Services;
+using CustomerManagement.Infrastructure.Persistence.Customers;
+using Framework.Core;
+using Framework.EventStore.SqlServer;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +15,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<CustomersService>();
+builder.Services.AddScoped<IEventStore, SqlServerEventStore>();
+builder.Services.AddScoped<ICustomersRepository, CustomersRepository>();
 
 var app = builder.Build();
 

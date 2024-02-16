@@ -13,22 +13,6 @@ namespace CustomerManagement.ApplicationService.Customers
             _customersRepository = customersRepository;
         }
 
-        public Task<Guid> CreateCutomer(string firstName, string lastName)
-        {
-            var customer = Customer.CreateCustomer(firstName, lastName);
-            return _customersRepository.SaveAsync(customer);
-        }
-
-        public async Task UpdateAddress(string customerId, string street, string city, string country, string zipcode)
-        {
-            var customer = await _customersRepository.GetCustomer(Guid.Parse(customerId));
-
-            if (customer == null) return;
-
-            customer.ChangeAddress(street, city, country, zipcode);
-            await _customersRepository.SaveAsync(customer);
-        }
-
         public async Task<CustomerDto> GetCustomer(string customerId)
         {
             var customer = await _customersRepository.GetCustomer(Guid.Parse(customerId));
@@ -50,10 +34,27 @@ namespace CustomerManagement.ApplicationService.Customers
             };
         }
 
+        public Task<Guid> CreateCustomer(string firstName, string lastName)
+        {
+            var customer = Customer.CreateCustomer(firstName, lastName);
+            return _customersRepository.SaveAsync(customer);
+        }
+
         public async Task UpdateCustomer(string customerId, string firstName, string lastName)
         {
             var customer = await _customersRepository.GetCustomer(Guid.Parse(customerId));
             customer.ChangeName(firstName, lastName);
+            await _customersRepository.SaveAsync(customer);
+        }
+
+        public async Task UpdateAddress(string customerId, string street, string city, string country, string zipcode)
+        {
+            var customer = await _customersRepository.GetCustomer(Guid.Parse(customerId));
+
+            if (customer == null) return;
+
+            customer.ChangeAddress(street, city, country, zipcode);
+            await _customersRepository.SaveAsync(customer);
         }
     }
 }

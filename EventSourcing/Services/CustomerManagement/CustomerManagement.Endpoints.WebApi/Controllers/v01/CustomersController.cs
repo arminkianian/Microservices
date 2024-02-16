@@ -18,7 +18,7 @@ namespace CustomerManagement.Endpoints.WebApi.Controllers.v01
         [HttpPost]
         public async Task<object> CreateCustomer([FromBody] SaveCustomerDto customer)
         {
-            var insertedCustomerId = await _customersService.CreateCutomer(customer.FirstName, customer.LastName);
+            var insertedCustomerId = await _customersService.CreateCustomer(customer.FirstName, customer.LastName);
             return new { PersonId = insertedCustomerId.ToString() };
         }
 
