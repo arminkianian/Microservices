@@ -8,7 +8,7 @@ namespace Framework.Core
 {
     public interface IEventStore
     {
-        Task SaveAsync(Guid aggregateId, string aggregateName, int originatingVersion, IReadOnlyCollection<IDomainEvent> domainEvents);
+        Task SaveAsync(Guid aggregateId, string aggregateName, int originatingVersion, IReadOnlyCollection<IDomainEvent> events);
         Task<IReadOnlyCollection<IDomainEvent>> LoadAsync(Guid aggregateRootId, string aggregateName);
         Task<IReadOnlyCollection<EventStoreItem>> GetAll(DateTime? afterDateTime);
     }

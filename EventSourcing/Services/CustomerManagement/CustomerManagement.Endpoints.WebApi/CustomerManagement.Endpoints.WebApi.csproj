@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EventStore.Client" Version="22.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\Framework.EventStore.EventStoreDB\Framework.EventStore.EventStoreDB.csproj" />
     <ProjectReference Include="..\..\..\Framework\Framework.EventStore.SqlServer\Framework.EventStore.SqlServer.csproj" />
     <ProjectReference Include="..\CustomerManagement.ApplicationService\CustomerManagement.ApplicationService.csproj" />
     <ProjectReference Include="..\CustomerManagement.Infrastructure.Persistence\CustomerManagement.Infrastructure.Persistence.csproj" />
