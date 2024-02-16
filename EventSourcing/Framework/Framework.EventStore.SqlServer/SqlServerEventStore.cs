@@ -23,6 +23,11 @@ namespace Framework.EventStore.SqlServer
             _sqlConnectionString = configuration.GetConnectionString("EventStoreDb");
         }
 
+        public SqlServerEventStore(string connectionString)
+        {
+            _sqlConnectionString = connectionString;
+        }
+
         public async Task<IReadOnlyCollection<EventStoreItem>> GetAll(DateTime? afterDateTime)
         {
             var whereClause = afterDateTime.HasValue ? $"WHERE [CreatedAt] > '{afterDateTime}'" : "";
