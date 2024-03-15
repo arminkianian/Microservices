@@ -1,0 +1,58 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/people/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10001
+        },
+        {
+          "Host": "localhost",
+          "Port": 10003
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/PersonService/People/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "person-profile"
+    },
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10002
+        }
+      ],
+      "UpstreamPathTemplate": "/WeatherService/WeatherForecast",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Orders/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10004
+        }
+      ],
+      "UpstreamPathTemplate": "/OrderService/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "person-orders"
+    }
+  ],
+  "Aggregates": [
+    {
+      "UpstreamPathTemplate": "/AggregateService/{id}",
+      "RouteKeys": [ "person-profile", "person-orders" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:10000"
+  }
+}

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5D5F6C1C-AB53-48A5-B2FE-02362E185685}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherService.WebApi", "WeatherService.WebApi\WeatherService.WebApi.csproj", "{60313D3B-A6A4-43F2-B675-E692AE79C1C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonService.WebApi", "PersonService.WebApi\PersonService.WebApi.csproj", "{AAFFAFDC-C2FE-4CE3-BE7F-47E047CF7721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{622F936B-A36E-479F-B61B-BEDEED3E8F50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateways.Ocelot", "Gateways.Ocelot\Gateways.Ocelot.csproj", "{EADC4A0C-2CF2-4664-9631-F2E261FF2963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonService2.WebApi", "PersonService2.WebApi\PersonService2.WebApi.csproj", "{B7DBC304-B144-4590-A0AC-67B8A584D95D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService.WebApi", "OrderService.WebApi\OrderService.WebApi.csproj", "{92F82E9E-224A-46BD-92FF-68F556B1C0FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60313D3B-A6A4-43F2-B675-E692AE79C1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60313D3B-A6A4-43F2-B675-E692AE79C1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60313D3B-A6A4-43F2-B675-E692AE79C1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60313D3B-A6A4-43F2-B675-E692AE79C1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFFAFDC-C2FE-4CE3-BE7F-47E047CF7721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFFAFDC-C2FE-4CE3-BE7F-47E047CF7721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFFAFDC-C2FE-4CE3-BE7F-47E047CF7721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFFAFDC-C2FE-4CE3-BE7F-47E047CF7721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADC4A0C-2CF2-4664-9631-F2E261FF2963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADC4A0C-2CF2-4664-9631-F2E261FF2963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADC4A0C-2CF2-4664-9631-F2E261FF2963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADC4A0C-2CF2-4664-9631-F2E261FF2963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7DBC304-B144-4590-A0AC-67B8A584D95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DBC304-B144-4590-A0AC-67B8A584D95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DBC304-B144-4590-A0AC-67B8A584D95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DBC304-B144-4590-A0AC-67B8A584D95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F82E9E-224A-46BD-92FF-68F556B1C0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F82E9E-224A-46BD-92FF-68F556B1C0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F82E9E-224A-46BD-92FF-68F556B1C0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F82E9E-224A-46BD-92FF-68F556B1C0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{60313D3B-A6A4-43F2-B675-E692AE79C1C6} = {5D5F6C1C-AB53-48A5-B2FE-02362E185685}
+		{AAFFAFDC-C2FE-4CE3-BE7F-47E047CF7721} = {5D5F6C1C-AB53-48A5-B2FE-02362E185685}
+		{EADC4A0C-2CF2-4664-9631-F2E261FF2963} = {622F936B-A36E-479F-B61B-BEDEED3E8F50}
+		{B7DBC304-B144-4590-A0AC-67B8A584D95D} = {5D5F6C1C-AB53-48A5-B2FE-02362E185685}
+		{92F82E9E-224A-46BD-92FF-68F556B1C0FC} = {5D5F6C1C-AB53-48A5-B2FE-02362E185685}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36128616-4D7C-470A-A1E5-B1AFC9EEC59E}
+	EndGlobalSection
+EndGlobal
