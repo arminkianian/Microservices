@@ -21,7 +21,13 @@ namespace Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new PersonConfiguration());
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("server=.,1433; database=TestingDb; user id=sa; password=Abcd_1234; TrustServerCertificate=True;");
+            //base.OnConfiguring(optionsBuilder);
         }
     }
 }

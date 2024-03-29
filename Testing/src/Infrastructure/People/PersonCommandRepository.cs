@@ -5,22 +5,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zamin.Core.Domain.ValueObjects;
 
 namespace Infrastructure.People
 {
     public class PersonCommandRepository : IPersonCommandRepository
     {
-        private readonly AppDbContext context;
+        private readonly AppDbContext _context;
 
         public PersonCommandRepository(AppDbContext context)
         {
-            this.context = context;
+            this._context = context;
         }
 
         public void Add(Person person)
         {
-            context.People.Add(person);
-            context.SaveChanges();
+            _context.People.Add(person);
+            _context.SaveChanges();
+        }
+
+        public Person Get(BusinessId businessId)
+        {
+            return _context.People.AsEnumerable().First(c => c.BusinessId.Value == businessId.Value);
         }
     }
 }
